@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="pt-br">
+
+ 
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="reciclagem, reciclar, sustentabilidade, 3r"/>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../../../assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link href="../../../assets/vendor/fonts/circular-std/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../assets/libs/css/style.css">
+    <link rel="stylesheet" href="../../../assets/vendor/fonts/fontawesome/css/fontawesome-all.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/vendor/datatables/css/dataTables.bootstrap4.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/vendor/datatables/css/buttons.bootstrap4.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/vendor/datatables/css/select.bootstrap4.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/vendor/datatables/css/fixedHeader.bootstrap4.css">
+    <title>Recicla +</title>
+</head>
+
+<body>
+    <!-- ============================================================== -->
+    <!-- main wrapper -->
+    <!-- ============================================================== -->
+    <div class="dashboard-main-wrapper">
+        <!-- ============================================================== -->
+        <!-- navbar -->
+        <!-- ============================================================== -->
+        <div class="dashboard-header"></div>
+        <!-- ============================================================== -->
+        <!-- end navbar -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- left sidebar -->
+        <!-- ============================================================== -->
+        <div class="nav-left-sidebar sidebar-dark">
+            <div class="menu-list">
+                <nav class="navbar navbar-expand-lg navbar-light menuInclude">
+                    <a class="d-xl-none d-lg-none" href="#">Catadores</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!-- Aqui será incluido o menu -->
+                </nav>
+            </div>
+        </div>
+        <!-- ============================================================== -->
+        <!-- end left sidebar -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- wrapper  -->
+        <!-- ============================================================== -->
+        <div class="dashboard-wrapper">
+            <div class="container-fluid  dashboard-content">
+                <!-- ============================================================== -->
+                <!-- pagehader  -->
+                <!-- ============================================================== -->
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                        <div class="page-header">
+                            <h3 class="mb-2">Catadores</h3>
+                            <div class="page-breadcrumb">
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb">
+                                        <li class="breadcrumb-item"><a href="#" class="breadcrumb-link">Home</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">Catadores</li>
+                                    </ol>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div style="width: 100%; padding: 10px;">
+                        <div>
+                            <a href="./index.html" class="btn"><i class="fas fa-arrow-left"></i> Voltar</a href="./form.html">
+                        </div>
+                    </div>
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="formError alert alert-danger" style="display:none;" role="alert"></div>
+                                <form onSubmit="return false;" method="post">
+                                    <div class="row">
+                                        <div class="form-group col-12">
+                                            <label for="nome_coletor" class="col-form-label">Nome</label>
+                                            <input id="nome_coletor" name="nome_coletor" type="text" class="form-control required" description="Nome" >
+                                        </div>
+                                        <div class="form-group col-6">
+                                            <label for="tipo_lixo_coletor" class="col-form-label">Prefere qual tipo de lixo?</label>
+                                            <select name="tipo_lixo_coletor" id="tipo_lixo_coletor" class="form-control required" description="Tipo de lixo">
+                                                <option value="">Selecione...</option> 
+                                                <option value="1">PLASTICO</option> 
+                                                <option value="2">METAIS</option> 
+                                                <option value="3">PAPEL</option> 
+                                                <option value="4">PAPELÃO</option> 
+                                                <option value="5">VIDRO</option> 
+                                                <option value="6">ORGÂNICO</option> 
+                                            </select> 
+                                        </div>
+
+                                        <div class="form-group col-3">
+                                            <label for="cpf_coletor" class="col-form-label">CPF</label>
+                                            <input id="cpf_coletor" name="cpf_coletor" type="text" class="form-control required" description="CPF" >
+                                        </div>
+
+                                        <div class="form-group col-3">
+                                            <label for="celular_coletor" class="col-form-label">Celular</label>
+                                            <input id="celular_coletor" name="celular_coletor" type="text" class="form-control required" description="Celular" >
+                                        </div>
+
+                                        <div class="form-group col-3">
+                                            <label for="cep_coletor" class="col-form-label">CEP</label>
+                                            <input id="cep_coletor" name="cep_coletor" type="text" class="form-control cep required" description="CEP" >
+                                        </div>
+                                        <div class="form-group col-3">
+                                            <label for="numero_coletor" class="col-form-label">Número</label>
+                                            <input id="numero_coletor" name="numero_coletor" type="text" class="form-control required" description="Número" >
+                                        </div>
+
+                                        <div class="form-group col-6">
+                                            <label for="rua_coletor" class="col-form-label">Rua</label>
+                                            <input id="rua_coletor" name="rua_coletor" type="text" class="form-control rua required" description="Rua" >
+                                        </div>
+
+                                        <div class="form-group col-6">
+                                            <label for="bairro_coletor" class="col-form-label">Bairro</label>
+                                            <input id="bairro_coletor" name="bairro_coletor" type="text" class="form-control bairro required" description="Bairro" >
+                                        </div>
+
+                                        <div class="form-group col-3">
+                                            <label for="cidade_coletor" class="col-form-label">Cidade</label>
+                                            <input id="cidade_coletor" name="cidade_coletor" type="text" class="form-control cidade required" description="Cidade" >
+                                        </div>
+                                        <div class="form-group col-3">
+                                            <label for="uf_coletor" class="col-form-label">Estado</label>
+                                            <input id="uf_coletor" name="uf_coletor" type="text" class="form-control uf required" description="Estado" >
+                                        </div>
+                                    </div>
+                                    <div class="form-group float-right">
+                                        <button type="button" class="btn btn-primary btnSubmit">Salvar</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+            <!-- ============================================================== -->
+            <!-- footer -->
+            <!-- ============================================================== -->
+            <div class="footer"></div>
+            <!-- ============================================================== -->
+            <!-- end footer -->
+            <!-- ============================================================== -->
+        </div>
+        <!-- ============================================================== -->
+        <!-- end wrapper  -->
+        <!-- ============================================================== -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- end main wrapper  -->
+    <!-- ============================================================== -->
+    
+</body>
+ <!-- Optional JavaScript -->
+ <script> 
+  window.nodeRequire = require; 
+  delete window.require;
+  delete window.exports; delete window.module; 
+</script> 
+<script src="../../../assets/vendor/jquery/jquery-3.3.1.min.js"></script>
+<script src="../../../assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+<script src="../../../assets/vendor/slimscroll/jquery.slimscroll.js"></script>
+<script src="../../../assets/vendor/inputmask/js/jquery.inputmask.bundle.js"></script>
+<script src="../../../assets/libs/js/main-js.js"></script>
+<script src="../../../assets/js/stash.min.js"></script>
+<script src="../../../assets/js/axios.min.js"></script>
+<script src="../../../assets/js/bootstrap-notify.min.js"></script>
+<script src="../../utils/index.js"></script>
+<script src="../../includes/tree/index.js"></script>
+<script src="./form.js"></script>
+</html>

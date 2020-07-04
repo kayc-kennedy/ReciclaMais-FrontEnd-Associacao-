@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Recicla +</title>
+    <!-- meta tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="reciclagem, reciclar, sustentabilidade, 3r"/>
+    <!-- /meta tags -->
+    <!-- custom style sheet -->
+    <link href="../../../assets/css/style.css" rel="stylesheet" type="text/css" />
+    <!-- /custom style sheet -->
+    <!-- fontawesome css -->
+    <link href="../../../assets/css/fontawesome-all.css" rel="stylesheet" />
+    <!-- /fontawesome css -->
+    <!-- google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+    <!-- /google fonts-->
+
+</head>
+
+
+<body>
+    <h1>Recicla +</h1>
+    <div class=" login-form">
+        <div>
+          <center><img style="width: 35%;" src="../../../assets/images/logo.png" alt="123"></center>
+        </div>
+        <div>
+            <div class="divTextError" id="textError"></div>
+            <div class="divTextSuccess" id="textSuccess"></div>
+        </div>
+        <form onSubmit="return false;" method="post">
+
+            <div class="form-group">
+                <label>Nome Fantasia:</label>
+                <div class="group">
+                    <i class="fas fa-user"></i>
+                    <input type="text" class="form-control" name="nome" id="nome" placeholder="Nome Fantasia" required="required" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Razão Social:</label>
+                <div class="group">
+                    <i class="fas fa-user"></i>
+                    <input type="text" class="form-control" name="razao" id="razao" placeholder="Razão Social" required="required" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label>CNPJ:</label>
+                <div class="group">
+                    <i class="fas fa-id-card"></i>
+                    <input type="text" class="form-control" name="cnpj" id="cnpj" placeholder="CNPJ" required="required" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Email:</label>
+                <div class="group">
+                    <i class="fas fa-envelope"></i>
+                    <input type="text" class="form-control" name="mail" id="mail" placeholder="Email" required="required" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Senha:</label>
+                <div class="group">
+                    <i class="fas fa-unlock"></i>
+                    <input type="password" class="form-control" name="senha" id="senha" placeholder="Senha" required="required" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Repetir Senha:</label>
+                <div class="group">
+                    <i class="fas fa-unlock"></i>
+                    <input type="password" class="form-control" name="repitaSenha" id="repitaSenha" placeholder="Repetir Senha" required="required" />
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Telefone:</label>
+                <div class="group">
+                    <i class="fa fa-phone"></i>
+                    <input type="text" class="form-control" name="telefone" id="telefone" placeholder="Telefone" required="required" />
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>CEP:</label>
+                <div class="group">
+                    <i class="fa fa-map-marker"></i>
+                    <input type="text" class="form-control cep" name="cep" id="cep" placeholder="CEP" required="required" />
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Número:</label>
+                <div class="group">
+                    <i class="fa fa-map-marker"></i>
+                    <input type="text" class="form-control numero" name="numero" id="numero" placeholder="Número" required="required" />
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Rua:</label>
+                <div class="group">
+                    <i class="fa fa-map-marker"></i>
+                    <input type="text" class="form-control rua" name="rua" id="rua" placeholder="Rua" required="required" />
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Bairro:</label>
+                <div class="group">
+                    <i class="fa fa-map-marker"></i>
+                    <input type="text" class="form-control bairro" name="bairro" id="bairro" placeholder="Bairro" required="required" />
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Cidade:</label>
+                <div class="group">
+                    <i class="fa fa-map-marker"></i>
+                    <input type="text" class="form-control cidade" name="cidade" id="cidade" placeholder="Cidade" required="required" />
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Estado:</label>
+                <div class="group">
+                    <i class="fa fa-map-marker"></i>
+                    <input type="text" class="form-control uf" name="uf" id="uf" placeholder="Estado" required="required" />
+                </div>
+            </div>
+
+            <button class="btnSubmit" type="button">CADASTRAR</button>
+        </form>
+        <p class=" register-p">já possui conta?<a href="../Login/index.html" class="register"> Entrar</a></p>
+    </div>
+    <footer>
+        <p class="copyright-agileinfo"> &copy; 2020 Recicla+. All Rights Reserved</p>
+    </footer>
+
+</body>
+<script> 
+    window.nodeRequire = require; 
+    delete window.require;
+    delete window.exports; delete window.module; 
+</script> 
+<script src="../../../assets/vendor/jquery/jquery-3.3.1.min.js"></script>
+<script src="../../../assets/js/stash.min.js"></script>
+<script src="../../../assets/js/axios.min.js"></script>
+<script src="../../utils/index.js"></script>
+<script src="./index.js"></script>
+</html>

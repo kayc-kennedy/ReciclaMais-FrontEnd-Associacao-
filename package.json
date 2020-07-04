@@ -1,0 +1,29 @@
+{
+  "name": "recicla-mais-electron",
+  "version": "1.0.0",
+  "description": "Front end para aplicação Recicla Mais",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron src/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/ucl_si/pi-3/2020-1/e11/recicla-mais-front.git"
+  },
+  "author": "Gabriel Nascimento <gabrielklose@ucl.br>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://gitlab.com/ucl_si/pi-3/2020-1/e11/recicla-mais-front/issues"
+  },
+  "homepage": "https://gitlab.com/ucl_si/pi-3/2020-1/e11/recicla-mais-front#readme",
+  "dependencies": {
+    "electron": "^8.2.0",
+    "electron-reload": "^1.5.0",
+    "jQuery": "^1.7.4"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.1"
+  }
+}
